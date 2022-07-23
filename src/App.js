@@ -4,6 +4,7 @@ import Slider from './components/fixedSlider/slider.jsx';
 import Services from './components/services/services.jsx';
 import ProductsCards from './components/productsCards/productsCards.jsx';
 import AboutUs from './components/about-us/aboutUs.jsx';
+import Footer from './components/footer/footerStruture.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <ProductsCards />
       <AboutUs />
+      <Footer />
     </div>
   );
 }
