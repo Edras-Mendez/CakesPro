@@ -40,7 +40,6 @@ export const Image = styled.div`
 
   @media screen and (max-width: 900px){
     clip-path: none;
-  }
 `;
 
 export const Logo = styled.div`
@@ -78,7 +77,10 @@ export const Logo = styled.div`
       @media screen and (max-width: 900px){
         margin-left: 0px;
         margin-bottom: 15px;
-      }
+
+        @media screen and (max-width: 382px){
+          font-size: 3.5em;
+        }
     }
   }
 
