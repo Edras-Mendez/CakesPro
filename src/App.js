@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/navbar/navbar.jsx';
 import Slider from './components/fixedSlider/slider.jsx';
 import Services from './components/services/services.jsx';
+import ProductsCards from './components/productsCards/productsCards.jsx';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Slider />
       <Services />
+      <ProductsCards />
     </div>
   );
 }
