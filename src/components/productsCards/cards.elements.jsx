@@ -4,7 +4,6 @@ export const Container = styled.div`
   background-color: #191919;
   width: 300px;
   height: 400px;
-  //padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +21,14 @@ export const Container = styled.div`
 
     @media screen and (max-width: 782px){
       border-radius: 0px;
-    }
+      
+      @media screen and (max-width: 650px){
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 410px;
+        border-radius: 15px;
+      }
 
   }
 `;
@@ -32,9 +38,12 @@ export const ImageWrapper = styled.div`
   height: 50%;
 
   @media screen and (max-width: 1154px){
-    //width: 400px;
     height: 100%;
-  }
+
+    @media screen and (max-width: 650px){
+      width: 100%;
+      height: 55%;
+    }
 `;
 
 export const Image = styled.img`
@@ -48,7 +57,14 @@ export const Image = styled.img`
     @media screen and (max-width: 782px){
       border-radius: 0px;
       margin-left: 3px;
-    }
+
+      @media screen and (max-width: 650px){
+        width: 100%;
+        border-radius: 15px; 
+        height: 200px;
+        margin-left: 0px;
+        height: 220px;
+      }
   }
 `;
 
@@ -84,5 +100,17 @@ export const CardsDescription = styled.div`
     p{
       width: 90%;
     }
-  }
+
+    @media screen and (max-width: 650px){
+      width: 90%;
+      hieght: 200px;
+      margin-bottom: 50px;
+
+      p{
+        width: auto;
+      }
+      h3{
+        width: auto;
+      }
+    }
 `;
