@@ -3,7 +3,7 @@ import { AboutUsContainer, AboutUsWrapper } from './aboutUs.elements.jsx';
 
 function AboutUs () {
   return( 
-    <AboutUsContainer>
+    <AboutUsContainer >
       <AboutUsWrapper>
         <h2>About-Us</h2>
           <p>
