@@ -4,7 +4,7 @@ import { Container,
   LogoContainer,
   Menu,
   MenuItem,
-  MenuItemLink,
+  linkStyle,
   MobileIcon} from './navbar.elementes.jsx';
 import { SiCodechef } from "react-icons/si";
 import { FaHome, FaUsers, FaBars } from "react-icons/fa";
@@ -12,6 +12,8 @@ import { RiCake3Fill, RiContactsFill } from "react-icons/ri";
 import { GiSlicedBread, GiCookingGlove} from "react-icons/gi";
 import { IconContext } from "react-icons";
 import Contact from '../contact/contact.jsx';
+import { BrowserRouter } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Navbar () {
 
@@ -24,6 +26,7 @@ function Navbar () {
 
   return(
     <>
+    <BrowserRouter>
       <Container>
         <Wrapper>
           <IconContext.Provider value={{style: {fontSize: "1.2em", marginRight: "0.2em"}}}>
@@ -40,45 +43,45 @@ function Navbar () {
           <Menu open={showMobileMenu}>
 
             <MenuItem>
-              <MenuItemLink>
+              <Link to="#home" style={linkStyle}>
                 <FaHome />
                 Home
-              </MenuItemLink>
+              </Link>
             </MenuItem>
 
             <MenuItem>
-              <MenuItemLink>
+              <Link to="#services">
                 <GiCookingGlove />
                 Services
-              </MenuItemLink>
+              </Link>
             </MenuItem>
 
             <MenuItem>
-              <MenuItemLink>
+              <Link to="#desserts">
                 <RiCake3Fill />
                 Desserts
-              </MenuItemLink>
+              </Link>
             </MenuItem>
 
             <MenuItem>
-              <MenuItemLink>
+              <Link to="#breads">
                 <GiSlicedBread />
                 Bread
-              </MenuItemLink>
+              </Link>
             </MenuItem>
 
             <MenuItem>
-              <MenuItemLink >
+              <Link to="#about-us">
                 <FaUsers />
                 About-us
-              </MenuItemLink>
+              </Link>
             </MenuItem>
 
             <MenuItem onClick={pressContact}>
-              <MenuItemLink >
+              <Link to="">
                 <RiContactsFill />
                 Contact
-              </MenuItemLink>
+              </Link>
             </MenuItem>
 
           </Menu>
@@ -89,6 +92,7 @@ function Navbar () {
         showContact={showContact}
         setShowContact={setShowContact}
       />
+    </BrowserRouter>
     </>
   );
 }

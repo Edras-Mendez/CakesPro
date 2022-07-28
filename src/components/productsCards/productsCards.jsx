@@ -5,7 +5,7 @@ import CardStructure from './cardStructure.jsx';
 function ProductsCards (props){
   return (
     <CardsContainer>
-      <WrapperElements>
+      <WrapperElements id={"desserts"}>
         <CardStructure 
           image="image_card_1.jpg"
           cardTitle="Strawberry Cake"
@@ -22,7 +22,7 @@ function ProductsCards (props){
           cardDescription="delicious strawberry cake with vanilla cream and a sweet glaze on top, ideal for any situation."
         />
       </WrapperElements>
-      <WrapperElements>
+      <WrapperElements id={"breads"}>
         <CardStructure 
           image="card_bread_1.jpg"
           cardTitle="Strawberry Cake"

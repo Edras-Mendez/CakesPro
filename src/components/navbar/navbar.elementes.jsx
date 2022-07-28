@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 70px;
   background-color: rgba(0,0,0,0.5);
@@ -82,7 +82,7 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const MenuItemLink = styled.a`
+export const linkStyle = `
   display: flex;
   justify-content: center;
   align-items: center;

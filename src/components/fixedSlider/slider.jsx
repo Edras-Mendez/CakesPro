@@ -9,7 +9,7 @@ import { IconContext } from "react-icons";
 
 function Slider (){
   return (
-    <SliderContainer>
+    <SliderContainer id={"home"}>
       <Image>
       
       <InfoSlider>
