@@ -14,7 +14,7 @@ function ProductsCards (props){
         <CardStructure 
           image="image_card_2.jpg"
           cardTitle="Strawberry Cake"
-          cardDescription="delicious strawberry cake with vanilla cream and a sweet glaze on top, ideal for any situation."
+          cardDescription="asdfasdfasf adsfasdfadsf asdfads cream and a sweet glaze on top, ideal for any situation."
         />
         <CardStructure 
           image="image_card_3.jpg"
