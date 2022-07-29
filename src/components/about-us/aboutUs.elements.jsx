@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const AboutUsContainer = styled.div`
   width: 100%;
-  height: 400px;
+  height: 500px;
   margin: 70px 0; 
   display: flex;
   flex-wrap: wrap;
@@ -25,8 +25,9 @@ export const AboutUsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%; 
-  height: 100%;
+  height: 400px;
   padding: 15px;
+  margin-top: 50px;
 
   h2{
     width: 80%;

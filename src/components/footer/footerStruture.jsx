@@ -5,24 +5,23 @@ import { FooterContainer,
   RightsReserved} from './footer.element.jsx';
 import { LogoContainer } from '../navbar/navbar.elementes.jsx';
 import { SiCodechef } from "react-icons/si";
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer (){
   return (
     <FooterContainer>
       <FooterWrapper>
         <Content>
+          <BrowserRouter>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Desserts</a></li>
-            <li><a href="#">Bread</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><Link to="#home">Home</Link></li>
+            <li><Link to="#services">Services</Link></li>
+            <li><Link to="#desserts">Desserts</Link></li>
+            <li><Link to="#breads">Bread</Link></li>
+            <li><Link to="#about-us">About Us</Link></li>
           </ul>
-        </Content>
-        <Content>
-          <ul>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          </BrowserRouter>
         </Content>
         <Content>
         <LogoContainer>

@@ -1,11 +1,15 @@
 import React from 'react';
-import {CardsContainer, WrapperElements} from './productsCards.elements.jsx';
+import {CardsContainer, WrapperElements, Title} from './productsCards.elements.jsx';
 import CardStructure from './cardStructure.jsx';
 
-function ProductsCards (props){
+function ProductsCards (){
   return (
     <CardsContainer>
+
       <WrapperElements id={"desserts"}>
+      <Title>
+        <h2>Desserts</h2>
+      </Title>
         <CardStructure 
           image="image_card_1.jpg"
           cardTitle="Strawberry Cake"
@@ -23,6 +27,9 @@ function ProductsCards (props){
         />
       </WrapperElements>
       <WrapperElements id={"breads"}>
+      <Title>
+        <h2>Breads</h2>
+      </Title>
         <CardStructure 
           image="card_bread_1.jpg"
           cardTitle="Strawberry Cake"

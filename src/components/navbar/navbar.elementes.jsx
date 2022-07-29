@@ -82,34 +82,6 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const linkStyle = `
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  padding: 0.5rem 1.3rem;
-  font-size: 1.1rem;
-  transition: 0.5s all ease;
-  cursor: pointer;
-
-  &:hover{
-    color: black;
-    background-color: #FF891F;
-    transition: 0.5s all ease;
-    border-radius: 15px;
-  }
-
-
-  @media screen and (max-width: 1110px){
-    width: 100%;
-
-    &:hover{
-      border-radius: 0px;
-    }
-  }
-`;
-
 export const MobileIcon = styled.div`
   display: none;
 

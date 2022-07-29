@@ -4,7 +4,6 @@ import { Container,
   LogoContainer,
   Menu,
   MenuItem,
-  linkStyle,
   MobileIcon} from './navbar.elementes.jsx';
 import { SiCodechef } from "react-icons/si";
 import { FaHome, FaUsers, FaBars } from "react-icons/fa";
@@ -43,7 +42,7 @@ function Navbar () {
           <Menu open={showMobileMenu}>
 
             <MenuItem>
-              <Link to="#home" style={linkStyle}>
+              <Link to="#home">
                 <FaHome />
                 Home
               </Link>
