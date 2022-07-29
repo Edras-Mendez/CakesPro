@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
   background-color: #191919;
   width: 100%;
-  height: 250px;
+  height: 270px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-top: 10px solid #FF891F;
+  margin-bottom: 0px;
 `;
 export const FooterWrapper = styled.div`
   width: 90%;
@@ -16,7 +17,11 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
+
+  @media screen and (max-width: 630px){
+    flex-wrap: wrap;
+  }
 `;
 export const Content = styled.div`
 
@@ -24,11 +29,17 @@ export const Content = styled.div`
     list-style: none;
   }
   li{
-    margin: 15px;
+    margin: 10px;
   }
-  a{
-    color: #fff;
-    text-decoration: none;
+
+  @media screen and (max-width: 630px){
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li{
+    margin: 3px;
+    }
   }
 `;
 

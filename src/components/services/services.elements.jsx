@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerServices = styled.div`
   width: 100%;
-  height: 230px;
-  margin: 70px 0; 
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +25,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%; 
-  height: 100%;
+  height: 230px;
   padding: 15px;
 
   h2{
@@ -47,6 +46,7 @@ export const Wrapper = styled.div`
     width: 100%;
     border-radius: 0;
     height: auto;
+    margin-top: 130px;
 
     p{
       text-align: justify;

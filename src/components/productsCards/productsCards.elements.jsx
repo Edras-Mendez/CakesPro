@@ -28,3 +28,18 @@ export const WrapperElements = styled.div`
     }
 `;
 
+export const Title = styled.div`
+  width: 100%;
+  border-radius: 15px;
+  border-top: 2px solid #FF891F;
+  border-bottom: 2px solid #FF891F;
+  margin: 75px 0px 15px 0px;
+  //margin-bottom: 15px;
+
+  h2{
+    font-size: 45px;
+    font-family: 'Edu Tas Beginner';
+    text-align: center;
+  }
+`;
+
